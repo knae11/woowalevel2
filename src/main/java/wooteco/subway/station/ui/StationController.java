@@ -8,10 +8,9 @@ import wooteco.subway.station.dto.StationRequest;
 import wooteco.subway.station.dto.StationResponse;
 
 import java.net.URI;
-import java.sql.SQLException;
 import java.util.List;
 
-@RequestMapping("/api")
+@RequestMapping("/api/stations")
 @RestController
 public class StationController {
 
@@ -34,13 +33,9 @@ public class StationController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity deleteStation(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteStation(@PathVariable Long id) {
         stationService.deleteStationById(id);
         return ResponseEntity.noContent().build();
     }
 
-    @ExceptionHandler(SQLException.class)
-    public ResponseEntity handleSQLException() {
-        return ResponseEntity.badRequest().build();
-    }
 }
