@@ -7,7 +7,7 @@ Spring 입문, Mock 테스트, 통합테스트, Acceptance 테스트, 배포인�
 ## [체스 jwp](https://github.com/knae11/woowalevel2/tree/jwp-chess)
 - [1&2단계 PR](https://github.com/woowacourse/jwp-chess/pull/245)
 - [3단계 PR](https://github.com/woowacourse/jwp-chess/pull/321)
-- [스프링입문, MVC)](https://nauni.tistory.com/226?category=927888)
+- [스프링입문, MVC](https://nauni.tistory.com/226?category=927888)
 - [JDBC, CORE](https://nauni.tistory.com/229?category=927888)
 - AWS EC2 배포
 - MockTest, SliceTest
